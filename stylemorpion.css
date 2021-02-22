@@ -1,0 +1,116 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Bungee Outline", cursive;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+table {
+  margin: 0;
+}
+td {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: black;
+  font-size: 2em;
+  border-radius: 10%;
+}
+#message {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 5vh;
+  font-size: 3em;
+}
+#player1 {
+  width: 25%;
+  height: 320px;
+  text-align: center;
+  border: 5px solid royalblue;
+  border-radius: 5%;
+}
+#player1 input {
+  width: 80%;
+  height: 5vh;
+  margin-top: 5%;
+  font-family: "Bungee Outline", cursive;
+  font-size: 1.7em;
+  color: white;
+  background-color: black;
+  border: 2px solid royalblue;
+  border-radius: 3px;
+}
+#player1 input::placeholder {
+  color: white;
+}
+#player2 {
+  width: 25%;
+  height: 320px;
+  text-align: center;
+  border: 5px solid orangered;
+  border-radius: 5%;
+}
+#player2 input {
+  width: 80%;
+  height: 5vh;
+  margin-top: 5%;
+  font-family: "Bungee Outline", cursive;
+  font-size: 1.7em;
+  color: white;
+  background-color: black;
+  border: 2px solid orangered;
+  border-radius: 3px;
+}
+#player2 input::placeholder {
+  color: white;
+}
+span {
+  margin: 0;
+  font-size: 3em;
+}
+a {
+  color: white;
+  animation: blink 1s linear infinite;
+  text-decoration: none;
+}
+p {
+  margin-bottom: 0;
+  font-size: 3em;
+}
+@keyframes anim-1 {
+  0%,
+  8.3% {
+    left: -100%;
+    opacity: 0;
+  }
+  8.3%,
+  25% {
+    left: 25%;
+    opacity: 1;
+  }
+  33.33%,
+  100% {
+    left: 110%;
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
