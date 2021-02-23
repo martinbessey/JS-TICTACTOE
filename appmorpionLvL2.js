@@ -41,8 +41,8 @@ for (let i = 0; i < cells.length; i++) {
           document.getElementById("score-player-2").innerHTML =
             "Score: +" + scorePlayer2;
         }
-      } else if (counter == 9 && victory == false) {
-        msg.innerHTML = "DRAW !!!<br><a href='../HTML/indexmorpionLvL2.html'>Let's try something harder!</a>";
+      } else if (counter == 27 && victory == false) {
+        msg.innerHTML = "DRAW !!!<br><a href='../HTML/indexmorpionLvL2.html'>New Game</a>";
       } else {
         currentPlayer = currentPlayer == player1 ? player2 : player1;
         msg.innerHTML = "Let's go " + currentPlayer + " !";

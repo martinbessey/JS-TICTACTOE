@@ -22,7 +22,7 @@ td {
   font-size: 2em;
   border-radius: 10%;
 }
-#message {
+#message{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -31,11 +31,33 @@ td {
   padding-bottom: 5vh;
   font-size: 3em;
 }
+#button{
+  display:none;
+  width: 100%;
+  height: 15vh;
+  margin-top: 5%;
+  margin-bottom:5%;
+  font-family: "Bungee Outline", cursive;
+  font-size: 3em;
+  color: white;
+  border:none;
+  background-color: black;
+  border-radius: 3px;
+}
+#winner{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 5vh;
+  font-size: 3em;
+}
+
 #player1 {
   width: 25%;
   height: 320px;
   text-align: center;
-  border: 5px solid royalblue;
+  border: 5px solid skyblue;
   border-radius: 5%;
 }
 #player1 input {
@@ -46,7 +68,7 @@ td {
   font-size: 1.7em;
   color: white;
   background-color: black;
-  border: 2px solid royalblue;
+  border: 2px solid skyblue;
   border-radius: 3px;
 }
 #player1 input::placeholder {
@@ -73,6 +95,12 @@ td {
 #player2 input::placeholder {
   color: white;
 }
+#score-player-1{
+  color:skyblue;
+}
+#score-player-2{
+  color:orangered;
+}
 span {
   margin: 0;
   font-size: 3em;
@@ -86,22 +114,10 @@ p {
   margin-bottom: 0;
   font-size: 3em;
 }
-@keyframes anim-1 {
-  0%,
-  8.3% {
-    left: -100%;
-    opacity: 0;
-  }
-  8.3%,
-  25% {
-    left: 25%;
-    opacity: 1;
-  }
-  33.33%,
-  100% {
-    left: 110%;
-    opacity: 0;
-  }
+footer{
+  text-align: center;
+  padding-top: 5%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 @keyframes blink {
   0% {
