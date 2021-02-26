@@ -25,15 +25,22 @@ for (let i = 0; i < cells.length; i++) {
       if (counter >= 5) {
         checkVictory(state);
       }
+      // verification d'un victoire
       if (victory === true) {
-        msg.innerHTML = "Congratulations !";
+        msg.innerHTML = "Congratulations !"; //message général prédsent dans la span "message"
+        //Si le le joueur 1 gagne
         if (currentPlayer === player1) {
+          /*message personnalisé qui s'affiche dans la span "winner"
+          et reprend le nom du que ce joueur à tapé dans l'input "name1" + Affichage d'un qui rafraichi la page*/
           document.getElementById("winner").innerHTML =
-          document.getElementsByName("name1")[0].value+" won the game!!" + "<br><a href=''>Continue</a>";
+          document.getElementsByName("name1")[0].value+" won the game!!" +
+           "<br><a href=''>Continue</a>"// + event.preventDefault();
+          /*le score du gagnant est incrémenté de 1*/
           scorePlayer1++;
           document.getElementById("score-player-1").innerHTML =
             "Score: +" + scorePlayer1;
         }
+        //Si le le joueur 2 gagne
         if (currentPlayer === player2) {
           document.getElementById("winner").innerHTML =
             document.getElementsByName("name2")[0].value+" won the game!!" + "<br><a href=''>Continue</a>";
